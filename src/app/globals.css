@@ -16,14 +16,77 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body {}
+.masthead {
+  background-color: #ffffff;
+}
+.masthead-help {
+  padding-right: 510px;
+}
+.msbg {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.15rem;
+}
+.for-nav li {
+  padding-right:50px
+}
+.genrad {
+  border-radius: 10px;
+}
+.skt {
+  width: 470px;
+  height: 650px;
+  background-position-x:-305px;
+  background-size: 210%;
+}
+
+.grn-cta {
+  background: linear-gradient(-180deg, #2c915b, #187d47);
+  color: white;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 10px;
+}
+.blu-cta {
+  background: linear-gradient(-180deg, rgb(40,108,226), rgb(40,108,226));
+  color: white;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 10px;
+}
+.ylo-cta {
+  background: linear-gradient(-180deg, #f4ba01, #fea503);
+  color: white;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 10px;
+}
+.strip-btn {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 16px;
+  color: rgb(40, 108, 226);
+  font-weight: 700;
+}
+.pre-footer {
+  font-size: .75rem;
 }
 
 @layer utilities {
