@@ -3,83 +3,82 @@ import Image from "next/image";
 export default function Home() {
     return (
         <>
-            <div className='bg-blue-700 w-full absolute z-0' style={{height: '56px'}}></div>
-            <main className='w-full justify-center flex z-10'>
-                <div className='max-w-5xl w-full z-10'>
-                    <header className='for-nav bg-blue-700 text-white w-full'>
-                        <ul className='flex justify-start py-4'>
-                            <li>For Employers</li>
-                            <li>For Producers</li>
-                            <li>For Providers</li>
-                            <li>Medicaid Renewal</li>
-                        </ul>
-                    </header>
+        <header className='for-nav bg-blue-700 text-white pl-20 text-sm'>
+            <ul className='flex justify-start py-4 font-bold'>
+                <li>For Employers</li>
+                <li>For Producers</li>
+                <li>For Providers</li>
+                <li>Medicaid Renewal</li>
+            </ul>
+        </header>
 
-                    <nav className='flex justify-between items-center bg-white py-4'>
-                        <div className='flex items-center space-x-4'>
-                            <div className='logo'>
-                                <Image src='/logo.svg' alt='logo' height={50} width={150}/>
-                            </div>
-                            <ul className='flex space-x-4'>
-                                <li className='flex items-center'>Insurance Plans<span
-                                    className='ml-1'>&#x25BC;</span></li>
-                                <li className='flex items-center'>Member Support<span
-                                    className='ml-1'>&#x25BC;</span></li>
-                                <li className='flex items-center'>Health & Wellness Resources<span
-                                    className='ml-1'>&#x25BC;</span></li>
-                            </ul>
-                        </div>
-                        <div className='flex space-x-2'>
-                            <button className='grn-cta text-white px-4 py-2 rounded hover:bg-green-600'>Find Care
-                            </button>
-                            <button className='blu-cta text-white px-4 py-2 rounded hover:bg-blue-600'>Log In</button>
-                        </div>
-                    </nav>
+        <nav className='flex justify-between items-center bg-white py-4 pl-20 pr-20 text-sm'>
+            <div className='flex items-center space-x-4'>
+                <div className='logo'>
+                    <Image src='/logo.svg' alt='logo' height={50} width={150}/>
+                </div>
+                <ul className='flex space-x-4'>
+                    <li className='flex items-center'>Insurance Plans<span
+                        className='ml-1'>&#x25BC;</span></li>
+                    <li className='flex items-center'>Member Support<span
+                        className='ml-1'>&#x25BC;</span></li>
+                    <li className='flex items-center'>Health & Wellness Resources<span
+                        className='ml-1'>&#x25BC;</span></li>
+                </ul>
+            </div>
+            <div className='flex space-x-2'>
+                <button className='grn-cta text-white px-4 py-2 rounded hover:bg-green-600'>Find Care
+                </button>
+                <button className='blu-cta text-white px-4 py-2 rounded hover:bg-blue-600'>Log In</button>
+            </div>
+        </nav>
 
-                    <section className='masthead'>
-                        <div className='msbg pt-24 pl-20'
-                             style={{backgroundImage: "url('/masthead-bg.jpeg')", height: "510px"}}>
-                            <h1 style={{width: "370px"}}>Medicaid Renewal and Healthcare Coverage</h1>
-                            <p className='pb-4' style={{width: '630px'}}>Learn more about Medicaid renewal, also called
-                                Medicaid redetermination, and the possible
-                                impacts to your current health plan. We are here to help you stay covered.</p>
-                            <p className='pb-4 masthead-help'><strong>Need help?</strong> Answer a few quick questions
-                                to
-                                learn which health coverage
-                                you qualify for, as well as daily needs like food and transportation.</p>
-                            <button className='ylo-cta'>Get Started</button>
-                            <p className='pb-4 pt-4'>Or call us at the number below to learn more.</p>
-                            <button className='blu-cta'>866-545-0385</button>
-                        </div>
-                    </section>
-
+        <section className='masthead text-sm'>
+            <div className='msbg pt-20 pl-20' style={{backgroundImage: "url('/masthead-bg.jpeg')", height: "510px"}}>
+                <h1 className='pb-4 w-1/2'>Medicaid Renewal and Healthcare Coverage</h1>
+                <p className='pb-4 w-1/2'>Learn more about Medicaid renewal, also called
+                    Medicaid redetermination, and the possible
+                    impacts to your current health plan. We are here to help you stay covered.</p>
+                <p className='pb-4 masthead-help w-1/2'><strong>Need help?</strong> Answer a few quick questions
+                    to
+                    learn which health coverage
+                    you qualify for, as well as daily needs like food and transportation.</p>
+                <button className='ylo-cta'>Get Started</button>
+                <p className='pb-4 pt-4'>Or call us at the number below to learn more.</p>
+                <button className='blu-cta'>866-545-0385</button>
+            </div>
+        </section>
+            <main className='w-full justify-center flex text-sm px-16'>
+                <div className='w-full'>
                     {/* Feats Section */}
-                    <section className='feats flex justify-between p-8 pb-12'>
-                        <div className='feat-1 flex items-center space-x-2'>
-                            <Image src='/feat1.svg' alt='feature 1 icon' width={24} height={24}/>
+                    <section className='feats flex justify-between pt-12 pb-12 gap-8'>
+                        <div className='feat-1 flex items-center space-x-5'>
+                            <Image src='/feat1.svg' alt='feature 1 icon' width={64} height={64}/>
                             <span>Enrolled in a Medicaid, CHIP, or Expansion plan and want to prepare for renewal? Keep your
                         address updated with your state agency and watch for your renewal packet by mail.
                     </span>
                         </div>
 
-                        <div className='feat-2 flex items-center space-x-2'>
-                            <Image src='/feat2.svg' alt='feature 2 icon' width={24} height={24}/>
+                        <div className='feat-2 flex items-center space-x-5'>
+                            <Image src='/feat2.svg' alt='feature 2 icon' width={64} height={64}/>
                             <span>If you lose Medicaid coverage, you are eligible for a special enrollment period.
                         You typically have 60 days to find a new health insurance plan from the time you lose Medicaid.
                         </span>
                         </div>
 
-                        <div className='feat-3 flex items-center space-x-2'>
-                            <Image src='/feat3.svg' alt='feature 3 icon' width={24} height={24}/>
+                        <div className='feat-3 flex items-center space-x-5'>
+                            <Image src='/feat3.svg' alt='feature 3 icon' width={64} height={64}/>
                             <span>Earn too much to qualify for Medicaid? You may qualify for an
                             Individual & Family Health Insurance Plan as low as $0 a month.
                     </span>
                         </div>
                     </section>
 
-                    <section className='mid-call-out text-center pb-12'>
-                        <h2 className='pb-4'>Medicaid Renewal & Redetermination: What you Need To Know</h2>
-                        <p className='pb-4'>During the Public Health Emergency (PHE), nearly all Medicaid, Children
+                    <div className='h-2 bg-gray-50 bar'></div>
+
+                    <section className='mid-call-out text-center pb-20 mt-20 text-sm px-24'>
+                        <h2 className='pb-6'>Medicaid Renewal & Redetermination: What you Need To Know</h2>
+                        <p className='pb-6'>During the Public Health Emergency (PHE), nearly all Medicaid, Children
                             Health
                             Insurance Plans
                             (CHIP),
@@ -87,7 +86,7 @@ export default function Home() {
                             Legislation signed on December 29, 2022 allowed states to begin removing ineligible members
                             from
                             their Medicaid programs starting April 1, 2023.</p>
-                        <h3 className='pb-4'>You May Lose Coverage If You No Longer Qualify For Medicaid</h3>
+                        <h3 className='pb-6'>You May Lose Coverage If You No Longer Qualify For Medicaid</h3>
                         <p>Medicaid renewals, also known as Medicaid redeterminations, have started again and millions
                             of
                             individuals will need to take action to keep their current Medicaid coverage, or, if they no
@@ -96,10 +95,12 @@ export default function Home() {
                             should you lose coverage.</p>
                     </section>
 
-                    <section className='left-right-001 flex items-center p-8'>
+                    <div className='h-2 bg-gray-50 bar'></div>
+
+                    <section className='left-right-001 flex items-center px-8 pb-24 pt-8 text-sm mt-20 gap-12'>
                         <div className='flex-1'>
                             <h2 className='text-2xl font-bold mb-4'>Three Steps to Renew your Medicaid Coverage</h2>
-                            <p className='text-lg mb-4'>We are here to help you prepare for your Medicaid renewal. Watch
+                            <p className='mb-4'>We are here to help you prepare for your Medicaid renewal. Watch
                                 this video to get answers to your renewal questions, and learn how simple it can be to
                                 stay
                                 covered.</p>
@@ -108,21 +109,24 @@ export default function Home() {
                             <Image src='/3steps.png' alt='three steps' width={530} height={300} className='ml-auto'/>
                         </div>
                     </section>
+                    <div className='h-2 bg-gray-50 bar'></div>
 
-                    <section className='toggle-columns'>
+
+                    <section className='toggle-columns text-sm pt-20 px-8'>
                         <h1 className='text-center'>Frequently Asked Questions About Medicaid Renewal</h1>
 
-                        <div className='left-right flex items-start p-8'>
+                        <div className='left-right flex items-start pt-12'>
                             <div className='flex-1'>
                                 <Image src='/faq1.webp' alt='what is medicaid renewal' width={440} height={470}
                                        className='genrad'/>
                             </div>
                             <div className='flex-1 space-y-4'>
-                                <h3 className='mb-2'>What is Medicaid Renewal</h3>
-                                <div className='list-w-ico flex items-start space-x-2'>
+                                <h3 className='mb-2 font-bold pb-2'>What is Medicaid Renewal</h3>
+                                <div className='list-w-ico flex items-start space-x-2 pb-4'>
                                     <Image src='/feat1.svg' alt='feat1' width={40} height={40}/>
                                     <div>
-                                        <p>Medicaid renewal is a yearly review completed by your state to check if
+                                        <p className='leading-6'>Medicaid renewal is a yearly review completed by your
+                                            state to check if
                                             you’re
                                             still
                                             eligible for Medicaid coverage. In most states, you have to renew your
@@ -138,9 +142,10 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className='list-w-ico flex items-start space-x-2'>
+                                <div className='list-w-ico flex items-start space-x-2 pb-4'>
                                     <Image src='/feat2.svg' alt='feat2' width={40} height={40}/>
-                                    <p><strong>If you’ve had a change in income, age, or other qualifying
+                                    <p className='leading-6'><strong>If you’ve had a change in income, age, or other
+                                        qualifying
                                         factors</strong> since
                                         you
                                         enrolled in Medicaid, it’s possible you will no longer qualify. The only way to
@@ -151,7 +156,8 @@ export default function Home() {
 
                                 <div className='list-w-ico flex items-start space-x-2'>
                                     <Image src='/feat3.svg' alt='feat3' width={40} height={40}/>
-                                    <p>When it’s time for you to renew, you’ll get a notice telling you what to
+                                    <p className='leading-6'>When it’s time for you to renew, you’ll get a notice
+                                        telling you what to
                                         do. <strong>Be
                                             sure
                                             to follow the steps to renew before your deadline.</strong> If you have
@@ -164,10 +170,10 @@ export default function Home() {
                         </div>
 
 
-                        <div className='right-left flex items-center p-8'>
+                        <div className='right-left flex items-center px-6 pt-28 pb-24'>
                             <div className='flex-1'>
-                                <h3 className='mb-4'>What is The Public Health Emergency?</h3>
-                                <p className='text-lg mb-4'>As a result of the COVID-19 pandemic, a Public Health
+                                <h3 className='mb-6 font-bold'>What is The Public Health Emergency?</h3>
+                                <p className='mb-4 leading-6'>As a result of the COVID-19 pandemic, a Public Health
                                     Emergency
                                     was put into place by the
                                     federal government on January 27, 2020. Prior federal law addressing the COVID-19
@@ -188,14 +194,17 @@ export default function Home() {
                                        className='genrad'/>
                             </div>
                             <div className='flex-1 space-y-4'>
-                                <h3 className='mb-2'>What Can I Do Now To Prepare For Medicaid Renewal?</h3>
+                                <h3 className='font-bold mb-6'>What Can I Do Now To Prepare For Medicaid Renewal?</h3>
                                 <div className='list-w-ico flex items-start space-x-2'>
                                     <Image src='/circl1.svg' alt='feat1' width={40} height={40}/>
                                     <div>
-                                        <p>Check if your state agency has your current mailing address and contact
-                                            information. If you’ve moved or your contact information has changed,
-                                            contact
-                                            your state now. Important updates about your coverage come through the mail,
+                                        <p className='leading-6'><strong>Check if your state agency has your current
+                                            mailing address and contact
+                                            information.</strong> If you’ve moved or your contact information has
+                                            changed,
+                                            <a href='#'> contact
+                                                your state now.</a> Important updates about your coverage come through
+                                            the mail,
                                             including a notice when it’s time for you to renew. If your contact
                                             information
                                             isn’t up to date with your state agency, you may miss these notices.</p>
@@ -204,12 +213,14 @@ export default function Home() {
 
                                 <div className='list-w-ico flex items-start space-x-2'>
                                     <Image src='/circl2.svg' alt='feat2' width={40} height={40}/>
-                                    <p>Understand your health coverage options. If you’ve had major changes in your
+                                    <p className='leading-6'><strong>Understand your health coverage
+                                        options.</strong> If you’ve had major changes in your
                                         income,
                                         or household, it’s a good idea to explore other health plans now in case you no
                                         longer qualify for Medicaid. You may even be eligible for a low or no-cost
                                         Individual and Family Marketplace plan.*<br/><br/>
-                                        Check what health coverage you may qualify for, including health insurance and
+                                        <a href='#'> Check what health coverage you may qualify for</a>, including
+                                        health insurance and
                                         other
                                         benefits like food and transportation.</p>
                                 </div>
@@ -219,20 +230,23 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className='right-left flex items-center p-8'>
+                        <div className='right-left flex items-center px-8 pt-24'>
                             <div className='flex-1'>
-                                <h3 className='mb-4'>If I Am Working, Can I Get Health Coverage Through My Job?</h3>
-                                <p className='text-lg mb-4'>If you lose Medicaid, but are working, you may have access
+                                <h3 className='mb-6 font-bold'>If I Am Working, Can I Get Health Coverage Through My
+                                    Job?</h3>
+                                <p className='mb-6 leading-6'>If you lose Medicaid, but are working, you may have access
                                     to
                                     health coverage through your job. You typically have 60 days from the date you lose
                                     Medicaid to enroll in coverage through your job. Ask your employer about your
                                     options.
                                 </p>
-                                <p>
+                                <p className='leading-6'>
                                     However, if you or your family members are not covered under a health plan offered
-                                    through your job, Individual and Family Marketplace insurance plans may be an
+                                    through your job, <a href='#'>Individual and Family Marketplace insurance
+                                    plans</a> may be an
                                     option.
-                                    With the new IRS rule to make health coverage more affordable, you and your family
+                                    With the new <a href='#'>IRS rule</a> to make health coverage more <a
+                                    href='#'>affordable</a>, you and your family
                                     members may now be eligible to receive financial help on a Marketplace insurance
                                     plan.
                                 </p>
@@ -244,37 +258,42 @@ export default function Home() {
                         </div>
 
 
-                        <div className='left-right flex items-start p-8'>
+                        <div className='left-right flex items-start px-8 pt-28 pb-28'>
                             <div className='flex-1'>
                                 <div className='skt genrad' style={{backgroundImage: "url('/skating.webp')"}}></div>
                             </div>
                             <div className='flex-1 space-y-4'>
-                                <h3 className='mb-2'>Can I Help Another Person With Their Medicaid Or CHIP Renewal?</h3>
+                                <h3 className='mb-2 font-bold'>Can I Help Another Person With Their Medicaid Or CHIP
+                                    Renewal?</h3>
                                 <div className='list-w-ico flex items-start space-x-2'>
                                     <div>
-                                        <p>You may have the opportunity to help someone else with their Medicaid or CHIP
+                                        <p className='leading-6'>You may have the opportunity to help someone else with
+                                            their Medicaid or CHIP
                                             renewal, including your child, a family member, or a friend. Keep in mind,
                                             if
                                             you help someone else, you may be asked to show that you are a legal
                                             guardian or
                                             authorized representative.</p>
-                                        <p>Below are ways you can help someone navigate Medicaid renewal:</p>
+                                        <p className='pt-4'>Below are ways you can help someone navigate Medicaid
+                                            renewal:</p>
                                     </div>
                                 </div>
 
-                                <div className='list-w-ico flex items-start space-x-2 pl-8'>
+                                <div className='list-w-ico flex items-start space-x-2'>
                                     <ul className='list-decimal pl-4'>
-                                        <li className='flex items-start'>
-                                            <span className='mr-2'>1.</span>
-                                            <span>Check that the person’s state agency has their current mailing address and contact information. If they’ve moved or their contact information has changed, they should contact the state immediately to update their records.</span>
+                                        <li className='flex items-start pb-4'>
+                                            <span className='mr-2 leading-6 text-gray-500'>1.</span>
+                                            <span className='leading-6'><strong>Check that the person’s state agency has their current mailing address and contact information</strong>. If they’ve moved or their contact information has changed, they should <a
+                                                href='#'>contact the state </a>immediately to update their records.</span>
+                                        </li>
+                                        <li className='flex items-start pb-4'>
+                                            <span className='mr-2 leading-6 text-gray-500'>2.</span>
+                                            <span className='leading-6'><strong>Watch for mail about Medicaid renewal from the state</strong>. If a Medicaid request or renewal packet arrives from the state health insurance agency, be sure to respond by the due date.</span>
                                         </li>
                                         <li className='flex items-start'>
-                                            <span className='mr-2'>2.</span>
-                                            <span>Watch for mail about Medicaid renewal from the state. If a Medicaid request or renewal packet arrives from the state health insurance agency, be sure to respond by the due date.</span>
-                                        </li>
-                                        <li className='flex items-start'>
-                                            <span className='mr-2'>3.</span>
-                                            <span>Help them with other health coverage options if they are no longer eligible for Medicaid or CHIP. If they do not have access to health coverage through their job or a family member’s job, Individual and Family Marketplace insurance plans may be an option. Also, in some states, children who lose their Medicaid benefits may be eligible or CHIP or other programs.</span>
+                                            <span className='mr-2 leading-6 text-gray-500'>3.</span>
+                                            <span className='leading-6'><strong>Help them with other health coverage options if they are no longer eligible for Medicaid or CHIP.</strong> If they do not have access to health coverage through their job or a family member’s job, <a
+                                                href='#'>Individual and Family Marketplace insurance plans</a> may be an option. Also, in some states, children who lose their Medicaid benefits may be eligible or CHIP or other programs.</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -282,106 +301,126 @@ export default function Home() {
                         </div>
                     </section>
 
+                    <div className='h-2 bg-gray-50 bar'></div>
 
-                    <section>
-                        <h2 className='text-center'>
+                    <section className='text-sm pt-24'>
+                        <h2 className='text-center pb-4'>
                             How Can I Find Affordable Health Coverage If I No Longer Qualify For Medicaid?</h2>
-                        <p className='text-center'>We can help connect you to a plan that’s right for you. If you can’t
+                        <p className='text-center px-12'>We can help connect you to a plan that’s right for you. If you
+                            can’t
                             get
                             health insurance through
-                            your job and you’re under age 65, an Individual and Family plan through the Health Insurance
+                            your job and you’re under age 65, an <a href='#'> Individual and Family plan </a>through the
+                            Health Insurance
                             Marketplace may be right for you.</p>
 
-                        <div className='left-right flex items-start p-8'>
+                        <div className='left-right flex items-start p-8 pt-16'>
                             <div className='flex-1'>
                                 <Image src='/p1.webp' alt='what is medicaid renewal' width={460} height={365}
                                        className='genrad'/>
                             </div>
-                            <div className='flex-1 space-y-4'>
-                                <h3 className='mb-2'>How Much Does Marketplace Health Insurance Cost?</h3>
+                            <div className='flex-1 space-y-4 mt-16'>
+                                <h3 className='mb-2 font-bold'>How Much Does Marketplace Health Insurance Cost?</h3>
                                 <div className='flex items-start'>
                                     <div>
-                                        <p>Individual and Family Marketplace health insurance plans are available to
+                                        <p className='leading-6'><strong>Individual and Family Marketplace health
+                                            insurance plans are available to
                                             anyone
-                                            who does not have health insurance, including those no longer eligible for
-                                            Medicaid. Marketplace plans are available in Bronze, Silver, and Gold metal
-                                            levels and offer benefits like doctor visits, prescriptions, hospital care,
+                                            who does not have health insurance</strong>, including those no longer
+                                            eligible for
+                                            Medicaid. Marketplace plans are available in Bronze, Silver, and Gold <a
+                                                href='#'>metal
+                                                levels</a> and offer benefits like doctor visits, prescriptions,
+                                            hospital care,
                                             and
-                                            mental health care. You also may be eligible for financial help (a subsidy)
-                                            that
-                                            could lower your premium (monthly payment) - or even reduce it to $0 a
-                                            month.*</p>
+                                            mental health care. <strong>You also may be eligible for <a href='#'>financial
+                                                help (a subsidy)</a>
+                                                that
+                                                could lower your premium (monthly payment) - or even reduce it to $0 a
+                                                month.*</strong></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='two-by-two grid grid-cols-1 md:grid-cols-2 gap-8 p-8'>
-                            <div className='flex'>
-                                <Image src='/cal001.svg' alt='calendar' width={48} height={48} className='mr-4'/>
+                        <div className='two-by-two grid grid-cols-1 md:grid-cols-2 gap-16 px-8 pt-16'>
+                            <div className='flex items-start'>
+                                <Image src='/cal001.svg' alt='calendar' width={250} height={250} className='mr-4'/>
                                 <div>
                                     <h4 className='font-semibold mb-2'>When Can I Enroll In Marketplace Health Insurance
                                         After Losing Medicaid Coverage?</h4>
-                                    <p>Open Enrollment to enroll in an Individual and Family Marketplace insurance plan
+                                    <p className='leading-6'>Open Enrollment to enroll in an Individual and Family
+                                        Marketplace insurance plan
                                         runs
                                         every year from November 1 through January 15, in most states. If you no longer
                                         qualify for
-                                        Medicaid coverage, you are eligible for a special enrollment period. You
-                                        typically
-                                        have
-                                        60 days from the date you lose Medicaid to apply for a Marketplace insurance
+                                        Medicaid coverage, you are eligible for a <a href='#'> special enrollment
+                                            period</a>. <strong>You
+                                            typically
+                                            have
+                                            60 days</strong> from the date you lose Medicaid to apply for a Marketplace
+                                        insurance
                                         plan or
                                         to
                                         enroll in coverage through your job.1</p>
                                 </div>
                             </div>
 
-                            <div className='flex'>
-                                <Image src='/cal002.svg' alt='calendar' width={48} height={48} className='mr-4'/>
+                            <div className='flex items-start'>
+                                <Image src='/cal002.svg' alt='calendar' width={150} height={150} className='mr-4'/>
                                 <div>
                                     <h4 className='font-semibold mb-2'>Are There Marketplace Insurance Plan Options with
                                         $0
                                         Monthly Premiums?</h4>
-                                    <p>Yes. While you may earn too much to remain eligible for Medicaid coverage, you
+                                    <p className='leading-6'>Yes. While <strong>you may earn too much to remain eligible
+                                        for Medicaid coverage, you
                                         may
                                         qualify for an Individual and Family Marketplace insurance plan that has a
                                         monthly
                                         premium
-                                        payment as low as $0 (after your subsidy is applied).*</p>
+                                        payment as low as $0</strong> (after your subsidy is applied).*</p>
                                 </div>
                             </div>
 
-                            <div className='flex'>
-                                <Image src='/cal003.svg' alt='calendar' width={48} height={48} className='mr-4'/>
+                            <div className='flex items-start'>
+                                <Image src='/cal003.svg' alt='calendar' width={48} height={48}
+                                       className='mr-4 ico-pos'/>
                                 <div>
                                     <h4 className='font-semibold mb-2'>What Are Cost-Sharing Reductions?</h4>
-                                    <p>Along with a subsidy that can lower your monthly premium, cost-sharing reductions
+                                    <p className='leading-6'>Along with a subsidy that can lower your monthly premium,
+                                        cost-sharing reductions
                                         (CSRs)
-                                        are extra savings that can reduce your out-of-pocket costs when you get medical
+                                        are extra savings that can reduce your <a href='#'>out-of-pocket costs</a> when
+                                        you get medical
                                         care. If
-                                        your income is within the range that qualifies you for a CSR, you must enroll in
-                                        a
-                                        plan in
-                                        the Silver tier to receive the extra savings.</p>
+                                        your income is within the range that qualifies you for a CSR, <strong>you must
+                                            enroll in
+                                            a
+                                            plan in
+                                            the <a href='#'>Silver tier</a> to receive the extra savings.</strong></p>
                                 </div>
                             </div>
 
-                            <div className='flex'>
-                                <Image src='/cal004.svg' alt='calendar' width={48} height={48} className='mr-4'/>
+                            <div className='flex items-start'>
+                                <Image src='/cal004.svg' alt='calendar' width={48} height={48}
+                                       className='mr-4 ico-pos'/>
                                 <div>
                                     <h4 className='font-semibold mb-2'>How Do I Enroll In A Marketplace Insurance
                                         Plan?</h4>
-                                    <p>You can enroll online, or we can help guide you through the application process
+                                    <p className='leading-6'>You can <a href='#'>enroll online</a>, or we can help guide
+                                        you through the application process
                                         to
                                         find
-                                        an Individual and Family Marketplace insurance plan that fits your needs and
+                                        an Individual and Family <a href='#'>Marketplace insurance plan</a> that fits
+                                        your needs and
                                         budget.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <h2 className='text-center'>Continuing your care With Anthem</h2>
-                        <p className='text-center mb-4'>We want to make sure you have a smooth transition from Medicaid
+                        <h2 className='text-center pt-16 pb-4'>Continuing your care With Anthem</h2>
+                        <p className='text-center mb-4 leading-6 px-8'>We want to make sure you have a smooth transition
+                            from Medicaid
                             to
                             your new Anthem Individual and
                             Family coverage plan. That is why our care team will be available to talk about any recent
@@ -391,7 +430,8 @@ export default function Home() {
                             the
                             regular care and medicines you need.
                         </p>
-                        <p className='text-center'>If you need immediate access to medications that are not covered
+                        <p className='text-center leading-6 px-8'>If you need immediate access to medications that are
+                            not covered
                             under
                             your new plan, you will be
                             granted a one-time 30-day courtesy prescription drug refill. After that, you will need to
@@ -400,12 +440,15 @@ export default function Home() {
                         </p>
                     </section>
 
-                    <section className='shield'>
-                        <div className='shield-lock-up flex flex-col items-center text-center p-8'>
-                            <Image src='/shield.jpeg' alt='shield' width={270} height={290} className='mb-4'/>
-                            <h2 className='text-2xl font-bold mb-4'>You Can Feel Confident You have Health Insurance
+                    <div className='h-2 bg-gray-50 bar mt-24 mb-20'></div>
+
+                    <section className='shield text-sm'>
+                        <div className='shield-lock-up flex flex-col items-center text-center px-8 pb-20'>
+                            <Image src='/shield.jpeg' alt='shield' width={340} height={360} className='mb-4'/>
+                            <h2 className='font-bold mb-4 px-8'>You Can Feel Confident You have Health Insurance
                                 Options</h2>
-                            <p className='mb-4'>You have other healthcare plan options if you lose Medicaid or CHIP. We
+                            <p className='mb-4 leading-6 px-64'>You have other healthcare plan options if you lose
+                                Medicaid or CHIP. We
                                 can
                                 help you make the
                                 transition and find a plan that fits your needs and your budget.</p>
@@ -439,7 +482,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <h2 className='text-center mt-8'>Understand Your Coverage Options</h2>
+                        <h2 className='text-center mt-12 mb-10'>Understand Your Coverage Options</h2>
 
                         <div className='one-row-two-col grid grid-cols-1 md:grid-cols-2 gap-8 p-8'>
                             <div className='img-h-p-l flex items-start'>
@@ -495,7 +538,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <h2 className='text-center mt-8'>Additional Information</h2>
+                        <h2 className='text-center mt-12 mb-2'>Additional Information</h2>
                         <p className='text-center'>Stay informed by checking these useful resources for additional
                             information on Medicaid renewals and more.</p>
                         <div className='slots-l-r grid grid-cols-1 md:grid-cols-2 gap-8 p-8'>
@@ -508,7 +551,10 @@ export default function Home() {
                         </div>
                     </section>
 
-                    <section className='pre-footer'>
+                    <div className='h-2 bg-gray-50 bar mt-12 mb-10'></div>
+
+                    {/*current*/}
+                    <section className='pre-footer px-8'>
                         <p className='mb-4'>1 Guidance may be issued at a later date extending the special enrollment
                             period in some
                             circumstances.</p>
@@ -536,9 +582,9 @@ export default function Home() {
 
                 </div>
             </main>
-            <footer className='bg-black text-white py-16 mt-16'>
+            <footer className='bg-black text-white py-16 mt-16 text-sm'>
                 <div className='flex justify-center'>
-                    <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+                    <div className='grid grid-cols-1 md:grid-cols-3 gap-28'>
                         <div className='ftr-col-1'>
                             <ul className='space-y-2'>
                                 <li>About Anthem</li>
@@ -561,19 +607,19 @@ export default function Home() {
                             </ul>
                         </div>
                         <div className='ftr-col-3 space-y-4'>
-                            <div className='foot-link-ico flex items-center space-x-2'>
+                            <div className='foot-link-ico flex items-center space-x-2 fstripe'>
                                 <Image src='/x.svg' alt='X logo' width={24} height={24}/>
                                 <p>Follow us on X</p>
                             </div>
-                            <div className='foot-link-ico flex items-center space-x-2'>
+                            <div className='foot-link-ico flex items-center space-x-2 fstripe pb-2'>
                                 <Image src='/youtube.png' alt='YouTube logo' width={24} height={24}/>
                                 <p>Subscribe to our YouTube channel</p>
                             </div>
-                            <div className='foot-link-ico flex items-center space-x-2'>
+                            <div className='foot-link-ico flex items-center space-x-2 fstripe'>
                                 <Image src='/fb.svg' alt='Facebook logo' width={24} height={24}/>
                                 <p>Facebook</p>
                             </div>
-                            <div className='foot-link-ico flex items-center space-x-2'>
+                            <div className='foot-link-ico flex items-center space-x-2 mb-6 pb-2 fstripe'>
                                 <Image src='/syd.svg' alt='Sydney Health App logo' width={24} height={24}/>
                                 <p>Download the Sydney Health App</p>
                             </div>

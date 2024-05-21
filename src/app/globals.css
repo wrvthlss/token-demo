@@ -16,12 +16,18 @@
   }
 }
 
-body {}
+html {
+
+  overflow-x: hidden;
+}
+body {
+  color: rgba(51,51,51);
+  overflow-x: hidden;
+}
+
+
 .masthead {
   background-color: #ffffff;
-}
-.masthead-help {
-  padding-right: 510px;
 }
 .msbg {
   width: 100vw;
@@ -32,23 +38,34 @@ body {}
 h1{
   font-size: 2rem;
   font-weight: 700;
+  line-height: 36px;
 }
 h2 {
   font-size: 1.5rem;
   font-weight: 700;
+  line-height: 28px;
 }
+
 
 h3 {
   font-size: 1.25rem;
+  line-height: 24px;
 }
+
 h4 {
   font-size: 1.15rem;
+  line-height: 22px;
 }
 .for-nav li {
   padding-right:50px
 }
 .genrad {
   border-radius: 10px;
+}
+a {
+  color: rgb(40,100,226);
+  font-weight: 500;
+  text-decoration: underline;
 }
 .skt {
   width: 470px;
@@ -73,7 +90,7 @@ h4 {
 }
 .ylo-cta {
   background: linear-gradient(-180deg, #f4ba01, #fea503);
-  color: white;
+  color: #333;
   font-weight: 700;
   padding: 12px;
   border-radius: 10px;
@@ -87,6 +104,18 @@ h4 {
 }
 .pre-footer {
   font-size: .75rem;
+}
+.fstripe {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  height:50px;
+}
+.bar {
+  width: 5000px;
+  margin-left: -200px;
+}
+
+.shield p {
+  line-height: 1.5rem;
 }
 
 @layer utilities {
